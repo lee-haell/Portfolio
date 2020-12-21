@@ -17,11 +17,79 @@ h1 a img {
   position: absolute;
 }
 
+nav ul li {
+  position: relative;
+  display: table;
+  padding: 0 10px 15px 0;
+  cursor: pointer;
+}
+
 nav ul li a {
-  display: block;
   font: 1rem "mobiles";
   color: #fff;
-  margin: 1.25rem 0;
+  margin: 12px 40px;
+  transition: all 0.5s linear;
+}
+
+nav ul li.scroll a {
+  color: #222;
+}
+
+nav ul li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  background: transparent;
+  border: 1px dotted #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  transition: background 0.5s, width 0.5s;
+  transition-delay: 0.5s 0;
+}
+
+nav ul li:hover::before {
+  background: #000;
+  border: transparent;
+  transition-delay: 0s, 0s;
+  width: 100%;
+}
+
+nav ul li.scroll::before {
+  border: 1px dotted #e7551a;
+}
+
+nav ul li.scroll:hover::before {
+  background: #e7551a;
+}
+
+nav ul li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  z-index: 0;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+nav ul li:hover::after {
+  left: 15px;
+  transform: rotate(45deg) scale(1.5);
+  transition-delay: 0s;
+}
+
+nav ul li.scroll::after {
+  border-top: 2px solid #222;
+  border-right: 2px solid #222;
+  transition-delay: 0s;
 }
 
 .service_area {
@@ -50,8 +118,9 @@ nav ul li a {
 }
 
 .wrap .content .item {
+  width: 60%;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 40%;
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -62,16 +131,80 @@ nav ul li a {
 }
 
 .wrap .content .item .title {
+  position: absolute;
   display: block;
   font: 2.5rem "mobiles";
   line-height: 1.3;
+}
+
+.wrap .content .item .titlePaint:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.wrap .content .item .title:nth-child(2) {
   color: #fff;
+  animation: titlePaint 4s linear infinite;
+}
+
+@keyframes titlePaint {
+  0% {
+    clip-path: polygon(
+      0 42%,
+      17% 48%,
+      28% 54%,
+      40% 57%,
+      52% 59%,
+      66% 57%,
+      79% 54%,
+      91% 51%,
+      100% 49%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 67%,
+      14% 59%,
+      29% 52%,
+      42% 51%,
+      55% 55%,
+      68% 61%,
+      81% 63%,
+      91% 58%,
+      100% 53%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0 42%,
+      12% 50%,
+      26% 58%,
+      40% 61%,
+      55% 55%,
+      71% 51%,
+      83% 56%,
+      92% 63%,
+      100% 70%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.wrap .content .item .title:nth-child(3) {
+  color: #fff;
+  top: 60px;
 }
 
 .wrap .content .item .moreBtn {
   font: 0.85rem "Noto Sans";
   text-decoration: underline;
-  position: relative;
+  position: absolute;
+  top: 140px;
   padding: 0 0 0 15px;
 }
 
