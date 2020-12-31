@@ -1,7 +1,6 @@
 /* 헤더 영역 */
 header {
   position: fixed;
-  width: 15rem;
   margin: 4rem 0 0 4rem;
   z-index: 3;
 }
@@ -28,7 +27,11 @@ nav ul li a {
   font: 1rem "mobiles";
   color: #fff;
   margin: 12px 40px;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 nav ul li.scroll a {
@@ -123,7 +126,11 @@ nav ul li.scroll::after {
   top: 35%;
   left: 40%;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .wrap .content.scroll .item {
@@ -241,9 +248,10 @@ nav ul li.scroll::after {
   position: relative;
 }
 
-.item4_wrap .item4_content {
-  width: 45%;
-  padding: 15% 0 0 50%;
+.item4_wrap .item4_content,
+.item5_wrap .item5_content {
+  width: var(--contentWidth);
+  padding: var(--contentPadding);
 }
 
 .item4_wrap .item4_content .intro_title {
@@ -270,6 +278,76 @@ nav ul li.scroll::after {
 
 .item4_wrap .item4_content .main_product li img {
   width: 100%;
+  position: relative;
+}
+
+.item4_wrap .item4_content .main_product li:hover::before,
+.item4_wrap .item4_content .main_product li:hover .img_hover {
+  display: block;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.item4_wrap .item4_content .main_product li::before {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(22, 22, 22, 0.78);
+  z-index: 1;
+}
+
+.item4_wrap .item4_content .main_product li .img_hover {
+  display: none;
+  position: absolute;
+  left: 2vw;
+  right: 2vw;
+  top: 0;
+  padding-top: 65%;
+  z-index: 2;
+  font-style: "Noto Sans";
+  color: #fff;
+}
+
+.item4_wrap .item4_content .main_product li .img_hover p {
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.item4_wrap .item4_content .main_product li .img_hover p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1vw;
+  width: 0%;
+  height: 3px;
+  background: #fff;
+}
+
+.item4_wrap .item4_content .main_product li .img_hover:hover p::before {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.item4_wrap .item4_content .main_product li .img_hover p span {
+  font-size: 0.7rem;
+}
+
+.item4_wrap .item4_content .main_product li .img_hover i {
+  position: absolute;
+  top: 2.5vw;
+  right: 0;
+  font-size: 0.8rem;
 }
 
 .item4_wrap .item4_moveText p {
@@ -277,7 +355,11 @@ nav ul li.scroll::after {
   z-index: 1;
   font: 10rem "mobiles";
   color: #fff;
-  transition: all 1s linear;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .item4_wrap .item4_moveText p:nth-child(1) {
@@ -303,15 +385,11 @@ nav ul li.scroll::after {
 /* type5 */
 .item5_wrap {
   width: 100%;
-  padding: 10rem 0;
-}
-
-.item5_wrap .item5_content {
-  width: 80%;
+  padding-bottom: 12.5rem;
 }
 
 .item5_wrap .item5_content .item5_title {
-  margin: 0 0 4.5rem 25rem;
+  margin-bottom: 1rem;
 }
 
 .item5_wrap .item5_content .item5_title p {
@@ -321,11 +399,6 @@ nav ul li.scroll::after {
 .item5_wrap .item5_content .item5_title span {
   font: 0.7rem "Noto Sans";
   color: #e7551a;
-}
-
-.item5_wrap .item5_content .submit {
-  width: 50%;
-  margin-left: 25rem;
 }
 
 .item5_wrap .item5_content .submit:after {
@@ -371,9 +444,29 @@ nav ul li.scroll::after {
 
 /* footer */
 footer {
-  background: #222;
-  padding: 2rem 0;
+  background: url(images/호박_야외배경.jpg) center no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 7rem 0;
   text-align: center;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  background: #e7551a;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+footer .footer_wrap {
+  position: relative;
+  z-index: 1;
 }
 
 footer a {
@@ -400,7 +493,7 @@ footer .footer_call .footer_call_sns a {
   display: block;
   padding: 0.5rem 0;
   font: 0.7rem "Noto Sans";
-  color: #ddd;
+  color: #fff;
 }
 
 footer .footer_call {
