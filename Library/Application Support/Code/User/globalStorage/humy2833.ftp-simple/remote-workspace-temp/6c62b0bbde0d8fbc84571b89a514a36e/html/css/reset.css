@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  background: #fafafa;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: local("※"), url("../fonts/Lato-Regular.eot"),
+    url("../fonts/Lato-Regular.woff") format("woff"),
+    url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: local("※"), url("../fonts/Lato-Bold.eot"),
+    url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+:root {
+  --main-color: #3182f6;
+  --sub-color: #454f5d;
+  --line-color: #768399;
+  --white-color: #fafafa;
+}
