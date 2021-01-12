@@ -1,0 +1,810 @@
+.header_line {
+  width: 1px;
+  height: 92vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: var(--line-color);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* 헤더 영역 */
+header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+header .header_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header .header_wrap > a {
+  width: 10%;
+  position: absolute;
+  top: 30px;
+  left: 3%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  float: left;
+  color: var(--main-color);
+  z-index: 2;
+}
+
+header .header_wrap .toggle_menu {
+  width: 100%;
+  height: 30px;
+  padding: 30px 0 0 0;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_btn {
+  width: 35px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  left: 95%;
+  position: absolute;
+  z-index: 1;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_btn > span:nth-child(1) {
+  width: 100%;
+  height: 3.5px;
+  position: absolute;
+  top: 0;
+  background: var(--main-color);
+}
+
+header .header_wrap .toggle_menu .toggle_menu_btn > span:nth-child(2) {
+  width: 80%;
+  height: 3.5px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background: var(--main-color);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_btn > span:nth-child(3) {
+  width: 100%;
+  height: 3.5px;
+  position: absolute;
+  top: 16px;
+  background: var(--main-color);
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner {
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: -1500%;
+  z-index: -1;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul {
+  width: 100%;
+  height: 350px;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul > li {
+  width: 100%;
+  height: 80px;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul > li:nth-child(1) {
+  margin-top: 30px;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul > li > a {
+  display: block;
+  width: 50%;
+  height: 80px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul > li > a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 10px;
+  margin: -8px auto;
+  border-bottom: 5px solid var(--main-color);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul > li > a:hover {
+  color: var(--main-color);
+}
+
+header .header_wrap .toggle_menu .toggle_menu_inner > ul > li > a:hover:after {
+  width: 30%;
+}
+
+header .header_wrap .toggle_menu .toggle_bg {
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  z-index: -10;
+  top: -400px;
+  background: var(--sub-color);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* 메인 영역 */
+section {
+  width: 100%;
+  height: auto;
+}
+
+section .main_wrap {
+  width: 100%;
+  height: 879px;
+  padding-top: 36.9vh;
+}
+
+section .main_wrap:before {
+  content: "";
+  display: block;
+  width: 94%;
+  height: 1px;
+  position: absolute;
+  top: 35vh;
+  left: 0;
+  background: var(--line-color);
+}
+
+section .main_wrap:after {
+  content: "";
+  display: block;
+  width: 94%;
+  height: 1px;
+  position: absolute;
+  top: 80vh;
+  right: 0;
+  background: var(--line-color);
+}
+
+section .main_wrap .main_inner {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+
+section .main_wrap .main_inner .main_info {
+  width: 100%;
+  height: 100%;
+}
+
+section .main_wrap .main_inner .main_info .main_txt {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding-top: 10vh;
+}
+
+section .main_wrap .main_inner .main_info .main_txt li:nth-child(1) {
+  width: 100%;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--sub-color);
+}
+
+section .main_wrap .main_inner .main_info .main_txt li:nth-child(2) {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0 0 0;
+  color: var(--main-color);
+}
+
+section .main_wrap .main_inner .main_info .main_img {
+  width: 50%;
+  height: 100%;
+}
+
+section .main_wrap .main_inner .main_info .main_img img:nth-child(1) {
+  width: 20%;
+  height: 250px;
+  position: absolute;
+  top: 40vh;
+  left: 53%;
+}
+
+section .main_wrap .main_inner .main_info .main_img img:nth-child(2) {
+  width: 10%;
+  height: 85px;
+  position: absolute;
+  top: 40vh;
+  left: 68%;
+}
+section .main_wrap .main_inner .main_info .main_img img:nth-child(3) {
+  width: 10%;
+  height: 140px;
+  position: absolute;
+  top: 55vh;
+  left: 73%;
+}
+
+/* 소개 영역 */
+section .about_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 25vh 0 25vh 0;
+  background: #fff;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+section .about_wrap .about_inner {
+  width: 57%;
+  height: 537px;
+  margin: 0 auto;
+}
+
+section .about_wrap .about_inner h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+section .about_wrap .about_inner .about_contents_wrap {
+  width: 100%;
+  height: 510px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+section .about_wrap .about_inner .about_contents_wrap .about_contents_inner {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+section
+  .about_wrap
+  .about_inner
+  .about_contents_wrap
+  .about_contents_inner
+  > span {
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+section .about_wrap .about_inner .about_contents_wrap .about_contents_inner p {
+  padding-top: 50px;
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2.5rem;
+  text-align: center;
+  color: var(--white-color);
+}
+
+/* 포폴 영역 */
+section .pf_wrap {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 152px;
+  background: var(--white-color);
+}
+
+section .pf_wrap h3 {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--main-color);
+}
+
+section .pf_wrap .pf_center_line {
+  width: 1px;
+  height: 0;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  background: var(--line-color);
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+section .circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+  background: var(--main-color);
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+section .pf_wrap .pfw {
+  width: 100%;
+  height: 439px;
+  padding: 4.5rem 0 4.65rem 0;
+  position: relative;
+}
+
+section .pf_wrap .pfw .pf {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+section .pf_wrap .pfw:nth-child(even) .pf {
+  left: -50%;
+  opacity: 0;
+}
+
+section .pf_wrap .pfw:nth-child(odd) .pf {
+  right: -50%;
+  opacity: 0;
+}
+
+section .pf_wrap .pfw .pf h4 {
+  width: 50%;
+  position: relative;
+  z-index: 5;
+  margin-top: 103px;
+  margin-left: 25%;
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: var(--sub-color);
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section .pf_wrap .pfw .pf .pf_line {
+  width: 0;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 130px;
+  background: var(--main-color);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+section .pf_wrap .pfw .pf p {
+  width: 53%;
+  margin: 3rem 0 0 22.83%;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2rem;
+  color: var(--sub-color);
+}
+
+section .pf_wrap .pfw .pf .btn_wrap {
+  display: inline-block;
+  width: 50%;
+  height: 42px;
+  line-height: 42px;
+  margin: 80px 91px 0 25%;
+  text-align: center;
+}
+
+section .pf_wrap .pfw .pf .btn_wrap button {
+  width: 42%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--sub-color);
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+section .pf_wrap .pfw .pf .btn_wrap button .btn_txt {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 3;
+  text-align: center;
+  color: var(--sub-color);
+}
+
+section .pf_wrap .pfw .pf .btn_wrap button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 180px;
+  z-index: -1;
+  background: var(--white-color);
+  transform: translate(-32%, -30%) rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+
+section .pf_wrap .pfw .pf .btn_wrap button:hover {
+  border: 1px solid var(--main-color);
+}
+
+section .pf_wrap .pfw .pf .btn_wrap button:hover .btn_txt {
+  color: var(--white-color);
+}
+
+section .pf_wrap .pfw .pf .btn_wrap button:hover::before {
+  width: 100%;
+  background: var(--main-color);
+}
+
+section .pf_wrap .pfw .pf .btn_wrap .btn_txt:first-of-type {
+  float: left;
+  margin-right: 2.1%;
+}
+
+section .pf_wrap .pfw .pf .btn_wrap .btn_txt:last-of-type {
+  float: right;
+}
+
+section .pf_wrap .pfw .pfi {
+  width: 45.4%;
+  height: 439px;
+  position: absolute;
+  top: 40vh;
+  overflow: hidden;
+}
+
+section .pf_wrap .pfw .pfi:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--sub-color);
+  opacity: 0.8;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+section .pf_wrap .pfw .pfi:nth-child(even),
+section .pf_wrap .pfw .pfi:nth-child(odd),
+section .pf_wrap .pfw .pfi:hover:before {
+  opacity: 0;
+}
+
+section .pf_wrap .pfw .pfi:nth-child(even) {
+  right: -50%;
+}
+
+section .pf_wrap .pfw .pfi:nth-child(odd) {
+  left: -50%;
+}
+
+section .pf_wrap .pfw .pfi img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 6px;
+  box-shadow: 20px 15px 20px 0 rgba(65, 58, 58, 0.15);
+}
+
+section .pf_wrap .twizy_wrap {
+  margin-top: 152px;
+}
+
+section .pf_wrap .twizy_wrap .pf {
+  box-sizing: border-box;
+}
+
+/* left:text, right:img */
+section .pf_wrap .twizy_wrap .pfi,
+section .pf_wrap .salon_wrap .pfi {
+  float: right;
+}
+
+section .pf_wrap .pfw .pfi img:last-child,
+section .pf_wrap .pfw .pfi:hover img:first-child {
+  display: none;
+}
+
+section .pf_wrap .pfw .pfi:hover img {
+}
+
+section .pf_wrap .pfw .pfi:hover img:last-child {
+  display: block;
+}
+
+/* left:img, right:text */
+section .pf_wrap .hanggi_wrap .pfi,
+section .pf_wrap .pumpkin_wrap .pfi {
+  float: left;
+}
+
+section .pf_wrap .hanggi_wrap .pf,
+section .pf_wrap .pumpkin_wrap .pf,
+section .pf_wrap .salon_wrap .pf {
+  margin-top: 0;
+}
+
+/* 컨택트 영역(모달팝업) */
+.contact_wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.contact_wrap .contact_inner {
+  width: 65%;
+  height: 465px;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white-color);
+}
+
+.contact_wrap .contact_inner .contact_close {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2%;
+  right: -2%;
+  background: var(--main-color);
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 3;
+  color: var(--white-color);
+}
+
+.contact_wrap .contact_inner .contact_txt {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.contact_wrap .contact_inner .contact_txt li:nth-child(1) {
+  line-height: 1.8;
+  margin: 3rem auto;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.contact_wrap .contact_inner .contact_txt li:nth-child(2),
+.contact_wrap .contact_inner .contact_txt li:nth-child(3),
+.contact_wrap .contact_inner .contact_txt li:nth-child(4),
+.contact_wrap .contact_inner .contact_txt li:nth-child(5) a {
+  display: block;
+  width: 80%;
+  height: 35px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2.5;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px 0 rgba(65, 58, 58, 0.15);
+  background: var(--white-color);
+  color: var(--sub-color);
+  margin: 2.5rem auto;
+}
+
+.contact_wrap .contact_inner .contact_txt li:nth-child(4) {
+  cursor: pointer;
+}
+
+/* 푸터 영역 */
+footer {
+  width: 100%;
+  height: 300px;
+  margin-top: 30vh;
+  position: relative;
+}
+
+footer .footer_wrap {
+  width: 100%;
+  height: 100%;
+  background: var(--line-color);
+  text-align: center;
+}
+
+footer .footer_wrap h3 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 50px;
+}
+
+footer .footer_wrap .footer_info_wrap {
+  height: auto;
+  padding-top: 12vh;
+}
+
+footer .footer_wrap .footer_info_wrap p {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white-color);
+}
+
+footer .footer_wrap .footer_info_wrap a {
+  display: block;
+  margin: 1rem 0 0 0;
+  font-size: 3.125rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #fff;
+}
+
+footer .footer_wrap .footer_info_wrap span {
+  display: block;
+  margin: 1rem 0 0 0;
+  font-size: 0.8rem;
+  color: var(--sub-color);
+}
+
+footer .footer_wrap .validator {
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* 스크롤탑 버튼 */
+footer .footer_wrap .scroll_wrap {
+  width: 57px;
+  height: 226px;
+  position: fixed;
+  left: 92%;
+  bottom: 40px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+footer .footer_wrap .scroll_wrap .scroll_txt {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--main-color);
+  text-align: center;
+  margin-top: 145px;
+}
+
+footer .footer_wrap .scroll_wrap #scroll_btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: var(--main-color);
+  border-radius: 50%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+footer .footer_wrap .scroll_wrap #scroll_btn:before,
+footer .footer_wrap .scroll_wrap #scroll_btn:after {
+  content: "";
+  width: 3px;
+  height: 12px;
+  background: var(--white-color);
+  position: absolute;
+  top: 20px;
+}
+
+footer .footer_wrap .scroll_wrap #scroll_btn:before {
+  left: 40%;
+}
+
+footer .footer_wrap .scroll_wrap #scroll_btn:after {
+  right: 40%;
+}
+
+footer .footer_wrap .scroll_wrap #scroll_btn:after,
+footer .footer_wrap .scroll_wrap #scroll_btn.on:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+footer .footer_wrap .scroll_wrap #scroll_btn:before,
+footer .footer_wrap .scroll_wrap #scroll_btn.on:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
