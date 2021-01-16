@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @media (max-width: 1340px) {
   html {
     font-size: 15px;
@@ -112,7 +114,7 @@
   }
 
   .contact_wrap .contact_inner .contact_txt {
-    width: 60%;
+    width: 80%;
   }
 
   .contact_wrap .contact_inner .contact_txt li:nth-child(1) {

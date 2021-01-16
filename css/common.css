@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .header_line {
   width: 1px;
   height: 92vh;
@@ -170,7 +172,7 @@ header .header_wrap .toggle_menu .toggle_bg {
   transition: all 0.3s ease;
 }
 
-/*** 메인 영역 ***/
+/* 메인 영역 */
 section {
   width: 100%;
   height: auto;
@@ -267,7 +269,7 @@ section .main_wrap .main_inner .main_info .main_img img:nth-child(3) {
   left: 70%;
 }
 
-/*** 소개 영역 ***/
+/* 소개 영역 */
 section .about_wrap {
   width: 100%;
   height: 100%;
@@ -334,7 +336,7 @@ section .about_wrap .about_inner .about_contents_wrap .about_contents_inner p {
   color: #faebdc;
 }
 
-/*** 포폴 영역 ***/
+/* 포폴 영역 */
 section .pf_wrap {
   width: 100%;
   height: auto;
@@ -362,7 +364,7 @@ section .pf_wrap .pf_center_line {
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 0;
   background: #222;
   -webkit-transition: all 5s ease;
   -moz-transition: all 5s ease;
@@ -580,6 +582,7 @@ section .pf_wrap .salon_wrap .pf {
   background: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
+
 .contact_wrap .contact_inner {
   width: 65%;
   height: 465px;
@@ -589,6 +592,7 @@ section .pf_wrap .salon_wrap .pf {
   transform: translateX(-50%);
   background: #faebdc;
 }
+
 .contact_wrap .contact_inner .contact_close {
   width: 33px;
   height: 33px;
@@ -599,6 +603,7 @@ section .pf_wrap .salon_wrap .pf {
   background: #ff5b3a;
   cursor: pointer;
 }
+
 .contact_wrap .contact_inner .contact_txt {
   width: 45%;
   height: 100%;
@@ -607,6 +612,7 @@ section .pf_wrap .salon_wrap .pf {
   transform: translateX(-50%);
   text-align: center;
 }
+
 .contact_wrap .contact_inner .contact_txt li:nth-child(1) {
   width: 50%;
   height: auto;
@@ -620,6 +626,7 @@ section .pf_wrap .salon_wrap .pf {
   font-weight: 600;
   color: #222;
 }
+
 .contact_wrap .contact_inner .contact_txt li:nth-child(1):before {
   content: "";
   display: block;
@@ -799,11 +806,6 @@ footer .footer_wrap .scroll_wrap #scroll_btn:before {
   position: absolute;
   top: 20px;
   left: 40%;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 footer .footer_wrap .scroll_wrap #scroll_btn:after {
@@ -824,6 +826,8 @@ footer .footer_wrap .scroll_wrap #scroll_btn.on:before {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+footer .footer_wrap .scroll_wrap #scroll_btn:before,
 footer .footer_wrap .scroll_wrap #scroll_btn.on:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
