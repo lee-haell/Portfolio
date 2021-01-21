@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap");
 
 * {
   margin: 0;
@@ -10,13 +11,17 @@ html,
 body {
   width: 100%;
   height: auto;
-  background: #faebdc;
+  background: #fafafa;
   overflow-x: hidden;
 }
 
 html {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+  position: relative;
 }
 
 ul,
@@ -44,4 +49,11 @@ a {
     url("../fonts/Lato-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+:root {
+  --main-color: #0a2a43;
+  --sub-color: #f1c40f;
+  --line-color: #768399;
+  --white-color: #fafafa;
 }
