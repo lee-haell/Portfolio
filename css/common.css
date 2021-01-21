@@ -240,16 +240,6 @@ section.img_scroll img {
   animation: animate 8s linear infinite;
 }
 
-.circle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 3px solid transparent;
-}
-
 @keyframes animate {
   0% {
     transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
@@ -257,6 +247,63 @@ section.img_scroll img {
   100% {
     transform: perspective(1000px) rotateY(0) rotateX(15deg);
   }
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--sub-color);
+  border-right: 3px solid var(--sub-color);
+  animation: circleBefore 4s linear infinite;
+}
+
+@keyframes circleBefore {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: span 4s linear infinite;
+}
+
+@keyframes span {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+.circle span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: -8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--sub-color);
+  box-shadow: 0 0 5px var(--sub-color);
 }
 
 /* 소개 영역 */
@@ -344,7 +391,7 @@ section
   .about_contents_inner
   p
   .about_link:hover {
-  color: var(--white-color);
+  color: var(--sub-color);
 }
 
 /* 포폴 영역 */
@@ -756,20 +803,19 @@ footer .footer_wrap .validator {
 /* 스크롤탑 버튼 */
 footer .footer_wrap .scroll_wrap {
   width: 57px;
-  height: 226px;
   position: fixed;
   left: 92%;
   bottom: 40px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 9999;
 }
 
 footer .footer_wrap .scroll_wrap .scroll_txt {
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--main-color);
+  color: var(--line-color);
   text-align: center;
-  margin-top: 145px;
+  margin: 0 0 60px 0;
 }
 
 footer .footer_wrap .scroll_wrap #scroll_btn {
@@ -779,7 +825,7 @@ footer .footer_wrap .scroll_wrap #scroll_btn {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  background: var(--main-color);
+  background: var(--sub-color);
   border-radius: 50%;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
