@@ -1,38 +1,10 @@
 @charset "utf-8";
 
-@media (max-width: 1340px) {
+/* h2 text top값 pc에서 다시 확인! */
+
+@media screen and (max-width: 1024px) {
   html {
     font-size: 15px;
-  }
-}
-
-@media (max-width: 1280px) {
-  html {
-    font-size: 15px;
-  }
-
-  header .header_wrap > a {
-    left: 3%;
-  }
-
-  section .about_wrap .about_inner {
-    width: 90%;
-  }
-
-  .contact_wrap .contact_inner .contact_txt li:nth-child(5):before {
-    top: 360px;
-  }
-}
-
-@media (max-width: 1024px) {
-  header
-    .header_wrap
-    .toggle_menu
-    .toggle_menu_inner
-    > ul
-    > li
-    > a:hover:after {
-    width: 40%;
   }
 
   section .about_wrap .about_inner .about_contents_wrap .about_contents_inner {
@@ -56,7 +28,7 @@
   }
 }
 
-@media (max-width: 940px) {
+@media screen and (max-width: 940px) {
   html {
     font-size: 13px;
   }
@@ -92,7 +64,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 14px;
   }
@@ -167,7 +139,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   html {
     font-size: 13px;
   }
