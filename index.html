@@ -25,10 +25,10 @@
             <div class="toggle_menu_inner_wrap">
                 <nav class="toggle_menu_inner">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="toggle_bg"></div>
@@ -37,20 +37,17 @@
         </div>
     </header>
     <!-- 헤더 -->
-    <section class="img_scroll">
+    <section class="img_scroll section" id="home">
         <img src="images/bg.png" alt="bg" id="bg">
         <img src="images/moon.png" alt="moon" id="moon">
         <img src="images/mountain.png" alt="mountain" id="mountain">
         <img src="images/road.png" alt="road" id="road">
-        <h2 id="text"><em>HAE RIN.<br>WEB PUBLISHER.</em></h2>
+        <h2 id="text"><em>HAE RIN<br>PORTFOLIO.</em></h2>
     </section>
     <!-- 메인 비주얼 -->
-    <div class="circle">
-        💫 Scrolling
-        <span></span>
-    </div>
-    <!-- circle -->
-    <section class="introduce">
+    <div class="circle">SCROLL<span></span></div>
+    <!-- 스크롤 원 -->
+    <section class="introduce section" id="about">
         <article>
             <div class="intro_wrap">
                 <div class="intro_inner">
@@ -60,89 +57,132 @@
                     <div class="about_inner">
                         <div class="about_contents_wrap">
                             <div class="about_contents_inner" id="about">
-                                <span>🌝</span>
                                 <p>디자인 경력과 진로 고민을 거쳐 웹 퍼블리셔의 길로 들어섰습니다.<br>웹 표준, 웹 접근성에 준수하는 사이트를 구현하는 것에 관심이 있으며, 이를 통해 사용자들에게 동일한 서비스를 제공하는 것을 목표로 하고 있습니다. 
                                 NCS기반의 교육 과정을 통해 HTML5 / CSS3 / jQuery를 학습하여 반응형 프로젝트를 구현했습니다.<br>
                                 현재 <a href="https://github.com/lee-haell" target="_blank" class="about_link">Github</a>와 <a href="https://haeeeell.tistory.com/" target="_blank" class="about_link">개발 블로그</a>를 이용해 공부를 이어가고 있습니다.
-                            </p>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <!-- 소개 -->
+    </section>
+    <!-- 소개 -->
+    <section class="portfolio section" id="portfolio">
         <div class="pf_wrap">
-            <h3>PORTFOLIO</h3>
+            <h3><em>PORTFOLIO.</em></h3>
             <span class="pf_center_line"></span>
-            <div class="pfw twizy_wrap">
-                <div class="pf twizy">
-                    <h4>Twizy</h4>
+            <div class="pfw firstWrap">
+                <div class="pf first">
+                    <h4>Ultra Pumpkin</h4>
                     <div class="pf_line"></div>
-                    <p>르노 트위지의 웹 사이트 입니다. 미디어 쿼리를 사용하여 반응형으로 제작했고, 해상도마다 적절한 레이아웃으로 변경됩니다. jQuery로 세로 배너 슬라이드를 구현했습니다. 디자인 50%, 퍼블리싱 100% 참여했습니다.</p>
+                    <p>
+                        clip-path 이용한 animation<br>
+                        for문과 if문 활용<br>
+                        window scroll 값에 따라 네비게이션 color 변경<br>
+                        <small>디자인 및 코딩 100%</small>
+                    </p>
                     <div class="btn_wrap">
-                        <button><a href="https://github.com/lee-haell/Twizy/tree/master"  target="_blank" title="깃허브 트위지 코드" class="btn_txt">Code view</a></button>
-                        <button><a href="http://twizy.dothome.co.kr/" target="_blank" title="트위지 웹사이트" class="btn_txt">Site view</a></button>
+                        <button><a href="https://github.com/lee-haell/UltraPumpkin" class="btn_txt" target="_blank" title="울트라펌킨 깃허브 레퍼지토리">Code view</a></button>
+                        <button><a href="http://ultrapumpkin.dothome.co.kr/" class="btn_txt" target="_blank" title="울트라펌킨 바로가기">Site view</a></button>
                     </div>
                 </div>
-                <a href="http://twizy.dothome.co.kr/" target="_blank" class="pfi twizy">
-                    <img src="images/twizy_b.jpg" alt="트위지 웹사이트 바로가기">
-                    <img src="images/twizy.jpg" alt="트위지 웹사이트 바로가기">
+                <a href="http://ultrapumpkin.dothome.co.kr/" class="pfi first" target="_blank">
+                    <img src="images/ultrapumpkin_b.png" alt="울트라펌킨 바로가기">
+                    <img src="images/ultrapumpkin.png" alt="울트라펌킨 바로가기">
                 </a>
             </div>
-            <!-- 트위지 -->
-            <div class="pfw hanggi_wrap">
-                <a href="http://hanggi.dothome.co.kr/" target="_blank" title="채식한끼 웹사이트" class="pfi hanggi">
-                    <img src="images/hanggi_b.jpg" alt="채식한끼 웹사이트 바로가기">
-                    <img src="images/hanggi.jpg" alt="채식한끼 웹사이트 바로가기">
+            <!-- 울트라펌킨 -->
+            <div class="pfw twiceWrap">
+                <a href="http://playtube.dothome.co.kr/" class="pfi twice" target="_blank" title="플레이튜브 웹사이트">
+                    <img src="images/playtube_b.png" alt="플레이튜브 바로가기">
+                    <img src="images/playtube.png" alt="플레이튜브 바로가기">
                 </a>
-                <div class="pf hanggi">
+                <div class="pf twice">
+                    <h4>Playtube</h4>
+                    <div class="pf_line"></div>
+                    <p>
+                        유투브 클론코딩<br>
+                        미디어 쿼리를 이용한 반응형<br>
+                        flex를 활용한 수평 레이아웃<br>
+                        <small>디자인 및 코딩 100%</small>
+                    </p>
+                    <div class="btn_wrap">
+                        <button><a href="https://github.com/lee-haell/Playtube" class="btn_txt" target="_blank" title="플레이튜브 깃허브 레퍼지토리">Code view</a></button>
+                        <button><a href="http://playtube.dothome.co.kr/" class="btn_txt" target="_blank" title="플레이튜브 바로가기">Site view</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- 플레이튜브 -->
+            <div class="pfw thirdWrap">
+                <div class="pf third">
                     <h4>Hanggi</h4>
                     <div class="pf_line"></div>
-                    <p>채식한끼의 웹 사이트 입니다. 미디어 쿼리를 사용하여 반응형으로 제작했고, php를 사용하여 서브 페이지를 연결했습니다. 디자인과 퍼블리싱 100% 참여했습니다.</p>
+                    <p>
+                        미디어 쿼리를 이용한 반응형<br>
+                        네비게이션 scroll 됐을 때 if문 활용<br>
+                        button:hover, 스타일 변경<br>
+                        광고 배너 가로 슬라이드 구현<br>
+                        <small>디자인 및 코딩 100%</small>
+                    </p>
                     <div class="btn_wrap">
-                        <button><a href="https://github.com/lee-haell/Hanggi/tree/master"  target="_blank" title="깃허브 채식한끼 코드" class="btn_txt">Code view</a></button>
-                        <button><a href="http://hanggi.dothome.co.kr/" target="_blank" title="채식한끼 웹사이트" class="btn_txt">Site view</a></button>
+                        <button><a href="https://github.com/lee-haell/Hanggi" class="btn_txt" target="_blank" title="채식한끼 깃허브 레퍼지토리">Code view</a></button>
+                        <button><a href="http://hanggi.dothome.co.kr/" class="btn_txt" target="_blank" title="채식한끼 바로가기">Site view</a></button>
+                    </div>
+                </div>
+                <a href="http://hanggi.dothome.co.kr/" class="pfi third" target="_blank" title="채식한끼 바로가기">
+                    <img src="images/hanggi_b.jpg" alt="채식한끼 바로가기">
+                    <img src="images/hanggi.jpg" alt="채식한끼 바로가기">
+                </a>
+            </div>
+            <!-- 채식한끼 -->
+            <div class="pfw fourthWrap">
+                <a href="http://twizy.dothome.co.kr/" class="pfi fourth" target="_blank" title="트위지 바로가기">
+                    <img src="images/twizy_b.jpg" alt="트위지 바로가기">
+                    <img src="images/twizy.jpg" alt="트위지 바로가기">
+                </a>
+                <div class="pf fourth">
+                    <h4>Twizy</h4>
+                    <div class="pf_line"></div>
+                    <p>
+                        미디어 쿼리를 이용한 반응형<br>
+                        로딩화면 transition 효과<br>
+                        네비게이션 click 이벤트로 if문 활용<br>
+                        메인 비주얼 세로 슬라이드 구현<br>
+                        <small>디자인 50% 코딩 100%</small>
+                    </p>
+                    <div class="btn_wrap">
+                        <button><a href="https://github.com/lee-haell/Twizy" class="btn_txt" target="_blank" title="트위지 깃허브 레퍼지토리">Code view</a></button>
+                        <button><a href="hhttp://twizy.dothome.co.kr/" class="btn_txt" target="_blank" title="트위지 바로가기">Site view</a></button>
                     </div>
                 </div>
             </div>
-            <!-- 채식한끼 -->
-            <div class="pfw salon_wrap">
-                <div class="pf salon">
-                    <h4>Salon oth[vju:]</h4>
+            <!-- 트위지 -->
+            <div class="pfw fifthWrap">
+                <div class="pf fifth">
+                    <h4>Salon Oth vju</h4>
                     <div class="pf_line"></div>
-                    <p>헤어살롱 웹 사이트 입니다. 색다른 형식의 레이아웃으로 작업했으며, jQuery로 메뉴와 클릭 이벤트를 구현했습니다. 디자인과 퍼블리싱 100% 참여했습니다.</p>
+                    <p>
+                        기존과 다른 레이아웃<br>
+                        메인 비주얼 click 이벤트<br>
+                        <small>디자인 및 코딩 100%</small>
+                    </p>
                     <div class="btn_wrap">
-                        <button><a href="https://github.com/lee-haell/Salon/tree/master" target="_blank" title="깃허브 살롱아더뷰 코드" class="btn_txt">Code view</a></button>
-                        <button><a href="http://salonothvju.dothome.co.kr/" target="_blank" title="살롱아더뷰 웹사이트" class="btn_txt">Site view</a></button>
+                        <button><a href="https://github.com/lee-haell/Salon" class="btn_txt" target="_blank" title="살롱아더뷰 깃허브 레퍼지토리">Code view</a></button>
+                        <button><a href="http://salonothvju.dothome.co.kr/" class="btn_txt" target="_blank" title="살롱아더뷰 바로가기">Site view</a></button>
                     </div>
                 </div>
-                <a href="http://salonothvju.dothome.co.kr/" target="_blank" title="살롱아더뷰 웹사이트" class="pfi salon">
-                    <img src="images/salon_b.jpg" alt="살롱아더뷰 웹사이트 바로가기">
-                    <img src="images/salon.jpg" alt="살롱아더뷰 웹사이트 바로가기">
+                <a href="http://salonothvju.dothome.co.kr/" class="pfi fifth" target="_blank" title="살롱아더뷰 바로가기">
+                    <img src="images/salon_b.jpg" alt="살롱아더뷰 바로가기">
+                    <img src="images/salon.jpg" alt="살롱아더뷰 바로가기">
                 </a>
             </div>
             <!-- 살롱아더뷰 -->
-            <div class="pfw pumpkin_wrap">
-                <a href="http://ultrapumpkin.dothome.co.kr/" target="_blank" title="울트라펌킨 웹사이트" class="pfi pumpkin">
-                    <img src="images/pumpkin_b.jpg" alt="울트라펌킨 웹사이트 바로가기">
-                    <img src="images/pumpkin.jpg" alt="울트라펌킨 웹사이트 바로가기">
-                </a>
-                <div class="pf pumpkin">
-                    <h4>Ultra Pumpkin</h4>
-                    <div class="pf_line"></div>
-                    <p>울트라 펌킨의 웹 사이트 입니다. 텍스트 css 애니메이션과 JavaScript로 scroll 이벤트를 구현하여 네비게이션이 반응하도록 했습니다. 디자인과 퍼블리싱 100% 참여했습니다.</p>
-                    <div class="btn_wrap">
-                        <button><a href="https://github.com/lee-haell/Ultra-Pumpkin/tree/main/Library/Application%20Support/Code/User/globalStorage/humy2833.ftp-simple/remote-workspace-temp/25b8b22e36d94325d97e7495a2bd2907/html"  target="_blank" title="깃허브 울트라펌킨 코드" class="btn_txt">Code view</a></button>
-                        <button><a href="http://ultrapumpkin.dothome.co.kr/" target="_blank" title="울트라펌킨 웹사이트" class="btn_txt">Site view</a></button>
-                    </div>
-                </div>
-            </div>
-            <!-- 울트라 펌킨 -->
         </div>
     </section>
-    <!-- 섹션 -->
-    <div class="contact_wrap">
+    <!-- 포폴 -->
+    <div class="contact_wrap" id="contact">
         <div class="contact_inner">
             <span class="contact_close"></span>
             <ul class="contact_txt">
@@ -173,6 +213,12 @@
                         alt="올바른 CSS입니다!" />
                 </a>
             </p>
+            <aside>
+                <div class="sns">
+                    <a href="https://github.com/lee-haell" target="_blank"><i class="fab fa-github-alt"></i></a>
+                    <a href="https://haeeeell.tistory.com/" target="_blank"><i class="fab fa-blogger-b"></i></a>
+                </div>
+            </aside>
             <div class="scroll_wrap">
                 <p class="scroll_txt">SCROLL</p>
                 <p id="scroll_btn"></p>
